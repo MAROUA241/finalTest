@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace FinalTest.Tests
@@ -14,11 +15,19 @@ namespace FinalTest.Tests
             
         }
 
-        public IEnumerable<int> NombresPairs {
+        public IEnumerable<int> NombresPairs 
+        {
             get
             {
                 return _keyValuePairs.Where(x => (x.Value % 2) == 0).Select(x => x.Value);
             }
          }
+
+        public String TexteNombresImpairs
+        {
+            get { return _keyValuePairs.Where(x => (x.Value % 2) != 0).OrderBy(x =>x.Value)
+                .Select(x => x.Key).Aggregate((current, next) => current + ", " + next); }
+            
+        }
     }
 }
