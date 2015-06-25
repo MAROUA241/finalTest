@@ -33,9 +33,6 @@ namespace FinalTest
             return true;
         }
 
-        public IEnumerable<IEvenementMetier> Ouvrir(string numéroDeCompte, int autorisationDeCrédit)
-        {
-            throw new NotImplementedException();
-        }
+   
     }
 }

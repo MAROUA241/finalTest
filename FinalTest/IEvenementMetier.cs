@@ -8,6 +8,6 @@ namespace FinalTest
 {
     public interface IEvenementMetier
     {
-        IEnumerable<IEvenementMetier> Ouvrir(string numéroDeCompte, int autorisationDeCrédit);
+       
     }
 }
