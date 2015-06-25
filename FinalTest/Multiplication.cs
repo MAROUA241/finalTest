@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalTest
 {
-    public class Multiplication
+    public class Multiplication : IOperation
     {
 
         public Boolean PeutCalculer(string valeurString)
