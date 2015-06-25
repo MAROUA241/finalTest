@@ -48,6 +48,7 @@
     <Compile Include="Montant.cs" />
     <Compile Include="Multiplication.cs" />
     <Compile Include="Nombres.cs" />
+    <Compile Include="RetraitRéalisé.cs" />
     <Compile Include="Somme.cs" />
     <Compile Include="TypeReference.cs" />
     <Compile Include="TypeValeur.cs" />

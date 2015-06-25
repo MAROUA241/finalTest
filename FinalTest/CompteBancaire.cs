@@ -8,9 +8,15 @@ namespace FinalTest
 {
     public class CompteBancaire
     {
-        private static readonly IEnumerable<IEvenementMetier> _initialElements;
+       
         private String numéroDuCompte;
         public CompteBancaire(CompteCréé compteCréé)
+        {
+            this.numéroDuCompte = compteCréé.numéroDeCompte;
+        }
+
+        
+        public CompteBancaire(CompteCréé compteCréé, DépotRéalisé dépotRéalisé=null)
         {
             this.numéroDuCompte = compteCréé.numéroDeCompte;
         }
@@ -24,6 +30,11 @@ namespace FinalTest
         public IEnumerable<IEvenementMetier> FaireUnDepot(Montant montantDepot, DateTime dateDepot)
         {
             yield return new DépotRéalisé(numéroDuCompte, montantDepot, dateDepot);
+        }
+
+        public IEnumerable<IEvenementMetier> FaireUnRetrait(Montant montantRetrait, DateTime dateRetrait)
+        {
+            yield return new RetraitRéalisé(numéroDuCompte, montantRetrait, dateRetrait);
         }
     }
 
