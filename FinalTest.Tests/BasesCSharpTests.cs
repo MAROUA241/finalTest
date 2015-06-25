@@ -1,7 +1,8 @@
 ﻿using System;
+using FinalClass;
 using NFluent;
 using NUnit.Framework;
-using FinalClass;
+using FinalTest;
 
 namespace FinalTest.Tests
 {
