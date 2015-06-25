@@ -8,9 +8,14 @@ namespace FinalTest
 {
     public class BalanceNégativeDétectée : IEvenementMetier
     {
+        private string numéroDeCompte ;
+        private Montant montant;
+        private DateTime dateRetrait= new DateTime();
         public BalanceNégativeDétectée(string numéroDeCompte, Montant montant, DateTime dateRetrait)
         {
-            throw new NotImplementedException();
+            this.numéroDeCompte = numéroDeCompte;
+            this.montant=montant;
+            this.dateRetrait = dateRetrait;
         }
 
     

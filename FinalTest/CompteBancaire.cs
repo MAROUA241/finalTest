@@ -35,6 +35,7 @@ namespace FinalTest
         public IEnumerable<IEvenementMetier> FaireUnRetrait(Montant montantRetrait, DateTime dateRetrait)
         {
             yield return new RetraitRéalisé(numéroDuCompte, montantRetrait, dateRetrait);
+           
         }
     }
 
