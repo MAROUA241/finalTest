@@ -29,5 +29,10 @@ namespace FinalTest.Tests
                 .Select(x => x.Key).Aggregate((current, next) => current + ", " + next); }
             
         }
+
+        public String PremierNombreDontLeTexteContientPlusDe5Caractères
+        {
+            get { return _keyValuePairs.Where(x => (x.Key.Length > 5)).Select(x => x.Key).Aggregate((current, next) => current); }
+        }
     }
 }
