@@ -8,9 +8,7 @@ namespace FinalTest
 {
     public interface IOperation
     {
-        
             Boolean PeutCalculer(String s);
             double Calculer(String s);
-        
     }
 }
