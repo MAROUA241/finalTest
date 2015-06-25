@@ -10,8 +10,8 @@ namespace FinalTest
     public class CompteCréé :IEvenementMetier
     {
 
-        private string numéroDeCompte ;
-        private int autorisationDeCrédit;
+        public string numéroDeCompte ;
+        public int autorisationDeCrédit;
         public CompteCréé(string numéroDeCompte, int autorisationDeCrédit)
         {
             this.numéroDeCompte = numéroDeCompte;
